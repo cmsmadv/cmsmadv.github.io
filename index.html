@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>CMSM Advocacia | Consultoria Jurídica Especializada</title>
+  <meta name="description" content="CMSM Advocacia — Consultoria jurídica com foco técnico, atenção estratégica e comunicação transparente. Atendimento online e presencial para pessoas e empresas.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.cmsm.com.br/">
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --bg2:#070b14;
+      --text:#e8ecf7;
+      --muted:#aeb7d6;
+      --line:rgba(255,255,255,.10);
+      --card:rgba(255,255,255,.05);
+      --accent:#60a5fa;
+      --good:#22c55e;
+      --shadow: 0 18px 50px rgba(0,0,0,.40);
+      --radius: 18px;
+      --max: 1120px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial;
+      background:
+        radial-gradient(900px 420px at 80% -10%, rgba(96,165,250,.20), transparent 55%),
+        radial-gradient(700px 380px at 10% 0%, rgba(34,197,94,.14), transparent 60%),
+        linear-gradient(180deg, var(--bg2), #050710 70%);
+      color:var(--text);
+      line-height:1.55;
+    }
+
+    a{color:inherit}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+
+    .topbar{
+      position:sticky;top:0;z-index:30;
+      backdrop-filter: blur(10px);
+      background: rgba(7,11,20,.78);
+      border-bottom:1px solid var(--line);
+    }
+    .topbar .inner{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:12px 0;gap:12px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:12px;
+      text-decoration:none;
+      font-weight:800;
+      letter-spacing:.3px;
+    }
+    .brand img{
+      height:40px;
+      width:auto;
+      display:block;
+    }
+    .nav{
+      display:flex;gap:12px;align-items:center;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .nav a{
+      text-decoration:none;
+      padding:8px 10px;
+      border-radius:12px;
+    }
+    .nav a:hover{background:rgba(255,255,255,.06);color:var(--text)}
+
+    .cta{display:flex;gap:10px;align-items:center}
+
+    .btn{
+      appearance:none;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      padding:10px 14px;
+      border-radius:14px;
+      font-weight:700;
+      cursor:pointer;
+      text-decoration:none;
+      transition: transform .08s ease, background .15s ease, border-color .15s ease;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      white-space:nowrap;
+    }
+    .btn:hover{background: rgba(255,255,255,.10); border-color: rgba(255,255,255,.22)}
+    .btn:active{transform: translateY(1px)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(96,165,250,.95), rgba(59,130,246,.65));
+      border-color: rgba(96,165,250,.40);
+      color:#071022;
+    }
+    .btn.good{
+      background: linear-gradient(135deg, rgba(34,197,94,.95), rgba(16,185,129,.65));
+      border-color: rgba(34,197,94,.42);
+      color:#05150d;
+    }
+
+    header.hero{
+      padding: 56px 0 20px;
+    }
+
+    .hero-panel{
+      background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 40px 22px;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero-panel:before{
+      content:"";
+      position:absolute; inset:-140px -140px auto auto;
+      width:320px; height:320px;
+      background: radial-gradient(circle at 35% 35%, rgba(96,165,250,.40), transparent 62%);
+      transform: rotate(12deg);
+    }
+
+    .hero-logo{
+      height:96px;
+      width:auto;
+      display:block;
+      margin: 0 auto 22px;
+      position:relative;
+      z-index:2;
+      filter: drop-shadow(0 10px 24px rgba(0,0,0,.35));
+    }
+
+    h1{
+      margin:0;
+      font-size: clamp(28px, 3.2vw, 44px);
+      line-height:1.12;
+      position:relative;
+      z-index:2;
+      letter-spacing:.2px;
+    }
+
+    .sub{
+      margin:14px auto 0;
+      color:var(--muted);
+      font-size:16px;
+      position:relative;
+      z-index:2;
+      max-width: 78ch;
+    }
+
+    .hero-actions{
+      margin-top:22px;
+      display:flex;
+      gap:10px;
+      justify-content:center;
+      flex-wrap:wrap;
+      position:relative;
+      z-index:2;
+    }
+
+    .mini-note{
+      margin-top:14px;
+      color: rgba(174,183,214,.92);
+      font-size:12px;
+      position:relative;
+      z-index:2;
+    }
+
+    main{padding: 12px 0 44px}
+
+    section{
+      margin-top:18px;
+      background: rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      padding:22px;
+    }
+    section h2{
+      margin:0 0 12px;
+      font-size:18px;
+      letter-spacing:.2px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:12px;
+    }
+
+    .card{
+      padding:16px;
+      border-radius: 16px;
+      border:1px solid rgba(255,255,255,.10);
+      background: var(--card);
+    }
+    .card h3{
+      margin:0 0 6px;
+      font-size:15px;
+    }
+    .card p{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .pill{
+      display:inline-flex;align-items:center;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      color: var(--muted);
+      font-size:12px;
+      margin-right:8px;
+      margin-bottom:8px;
+    }
+
+    .footer{
+      padding:22px 0 36px;
+      color:var(--muted);
+      font-size:12px;
+    }
+    .footer .cols{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+      border-top:1px solid rgba(255,255,255,.10);
+      padding-top:16px;
+    }
+
+    @media (max-width: 980px){
+      .nav{display:none}
+      .grid{grid-template-columns:1fr}
+      .footer .cols{grid-template-columns:1fr}
+      .brand img{height:36px}
+      .hero-logo{height:86px}
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <div class="inner">
+        <a class="brand" href="./" aria-label="CMSM Advocacia">
+          <img src="logo.png" alt="CMSM Advocacia">
+          <span>CMSM Advocacia</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegação">
+          <a href="#atuacao">Atuação</a>
+          <a href="#metodo">Método</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="cta">
+          <a class="btn" href="https://wa.me/5512974063026?text=Olá!%20Vim%20pelo%20site%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orientação.">WhatsApp</a>
+          <a class="btn good" href="#contato">Falar agora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-panel">
+        <img class="hero-logo" src="logo.png" alt="CMSM Advocacia">
+
+        <h1>CMSM Advocacia</h1>
+
+        <p class="sub">
+          Consultoria jurídica com foco técnico, atenção estratégica e comunicação transparente.
+          Atendimento online e presencial para pessoas e empresas.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn good" href="https://wa.me/5512974063026?text=Olá!%20Vim%20pelo%20site%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orientação.">Chamar no WhatsApp</a>
+          <a class="btn primary" href="#atuacao">Ver áreas de atuação</a>
+        </div>
+
+        <div class="mini-note">
+          Conteúdo informativo. Cada caso exige análise individual. Sem promessa de resultado.
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section id="atuacao">
+      <h2>Áreas de atuação</h2>
+
+      <div style="margin-bottom:10px">
+        <span class="pill">Consultoria</span>
+        <span class="pill">Contencioso</span>
+        <span class="pill">Prevenção</span>
+        <span class="pill">Atendimento online</span>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Consultoria jurídica estratégica</h3>
+          <p>Diagnóstico técnico do problema, plano de ação, risco e orientação objetiva para decidir com segurança.</p>
+        </div>
+        <div class="card">
+          <h3>Execução de títulos e cobranças</h3>
+          <p>Atuação em execuções e medidas para recuperação de crédito, com estratégia de constrição e efetividade.</p>
+        </div>
+        <div class="card">
+          <h3>Inventários e sucessões</h3>
+          <p>Inventário judicial ou extrajudicial, regularização patrimonial e organização sucessória.</p>
+        </div>
+
+        <div class="card">
+          <h3>Divórcio, partilha e família</h3>
+          <p>Divórcio consensual ou litigioso, partilha, guarda, convivência e alimentos.</p>
+        </div>
+        <div class="card">
+          <h3>Direito digital</h3>
+          <p>Demandas envolvendo ambiente online, provas digitais, responsabilidade civil e medidas preventivas.</p>
+        </div>
+        <div class="card">
+          <h3>Fraudes bancárias</h3>
+          <p>Atuação em casos de golpes, transferências indevidas e medidas urgentes, com abordagem técnica e documental.</p>
+        </div>
+
+        <div class="card">
+          <h3>Mandado de segurança</h3>
+          <p>Mandados de segurança contra atos ilegais/abusivos, inclusive concursos e questões administrativas.</p>
+        </div>
+        <div class="card">
+          <h3>Contencioso cível</h3>
+          <p>Ações e defesas em demandas cíveis, com estratégia processual, prova e condução objetiva.</p>
+        </div>
+        <div class="card">
+          <h3>Atendimentos sob medida</h3>
+          <p>Caso fora do padrão? Fazemos triagem e enquadramento para definir o caminho jurídico adequado.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="metodo">
+      <h2>Método de trabalho</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>1) Triagem</h3>
+          <p>Levantamento dos fatos e documentos. Enquadramento do cenário e prioridades.</p>
+        </div>
+        <div class="card">
+          <h3>2) Estratégia</h3>
+          <p>Plano objetivo com passos, riscos, alternativas e custos previsíveis do processo.</p>
+        </div>
+        <div class="card">
+          <h3>3) Execução</h3>
+          <p>Atuação técnica, comunicação clara e registro do andamento. Sem ruído.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <div class="grid" style="grid-template-columns:repeat(2,1fr)">
+        <div class="card">
+          <h3>WhatsApp</h3>
+          <p>
+            Atendimento direto:
+            <a href="https://wa.me/5512974063026?text=Olá!%20Vim%20pelo%20site%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orientação.">
+              +55 12 97406-3026
+            </a>
+          </p>
+          <p style="margin-top:10px;color:var(--muted);font-size:13px">
+            Envie: assunto + cidade + resumo em 3 linhas.
+          </p>
+          <a class="btn good" href="https://wa.me/5512974063026?text=Olá!%20Vim%20pelo%20site%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orientação.">Abrir WhatsApp</a>
+        </div>
+
+        <div class="card">
+          <h3>E-mail</h3>
+          <p><a href="mailto:contato@cmsm.com.br">contato@cmsm.com.br</a></p>
+          <p style="margin-top:10px;color:var(--muted);font-size:13px">
+            Conteúdo informativo. Honorários, prazos e estratégia dependem do caso concreto.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <b>CMSM Advocacia</b>
+          <div style="margin-top:10px">
+            <span class="pill">Finalidade informativa</span>
+            <span class="pill">Sem promessa de resultado</span>
+            <span class="pill">Atendimento online</span>
+          </div>
+          <div style="margin-top:10px">
+            Este site tem finalidade informativa. Cada caso exige análise individual.
+          </div>
+        </div>
+        <div>
+          <b>Contato</b>
+          <div style="margin-top:10px">
+            <div>WhatsApp: <a href="https://wa.me/5512974063026?text=Olá!%20Vim%20pelo%20site%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orientação.">+55 12 97406-3026</a></div>
+            <div style="margin-top:6px">E-mail: <a href="mailto:contato@cmsm.com.br">contato@cmsm.com.br</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
