@@ -1,15 +1,10 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-
 <meta charset="utf-8">
-
 <title>CMSM Advocacia | Consultoria Jurídica Estratégica</title>
-
 <meta name="description" content="CMSM Advocacia — atuação em divórcio, partilha, guarda e pensão, inventários, execuções de títulos, mandados de segurança, direito digital e fraudes bancárias.">
-
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
 <meta name="robots" content="index,follow">
 
 <style>
@@ -33,12 +28,26 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 border-bottom:1px solid #1c2a44;
+gap:20px;
 }
 
-header .logo-text{
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+text-decoration:none;
+color:#ffffff;
+}
+
+.brand img{
+height:52px;
+display:block;
+}
+
+.brand span{
 font-weight:700;
 font-size:18px;
-color:#ffffff;
+line-height:1.2;
 }
 
 nav{
@@ -70,8 +79,11 @@ padding:40px 0;
 }
 
 .hero img{
-height:70px;
+height:78px;
 margin-bottom:20px;
+display:block;
+margin-left:auto;
+margin-right:auto;
 }
 
 .hero h1{
@@ -142,6 +154,7 @@ border-radius:12px;
 padding:20px;
 background:#101a2d;
 transition:0.2s;
+height:100%;
 }
 
 .card:hover{
@@ -153,6 +166,8 @@ border-color:#3c66ff;
 .card a{
 text-decoration:none;
 color:inherit;
+display:block;
+height:100%;
 }
 
 .card h3{
@@ -202,14 +217,45 @@ color:#b6c2da;
 font-size:16px;
 }
 
-.contact{
-text-align:center;
-margin-top:40px;
+.contact-grid{
+display:grid;
+gap:24px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 }
 
-.contact a{
-color:#8ab4ff;
+.contact-card{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:20px;
+background:#101a2d;
+}
+
+.contact-card h3{
+margin-top:0;
+margin-bottom:10px;
+font-size:20px;
+color:#ffffff;
+}
+
+.contact-card p{
+margin:0 0 16px 0;
+font-size:15px;
+color:#b7c2da;
+}
+
+.contact-button{
+display:inline-block;
+background:#25d366;
+color:#ffffff;
+padding:12px 18px;
+border-radius:8px;
 text-decoration:none;
+font-weight:700;
+}
+
+.contact-button.secondary{
+background:#1b2a46;
+color:#ffffff;
 }
 
 footer{
@@ -222,6 +268,36 @@ font-size:14px;
 border-top:1px solid #1c2a44;
 }
 
+@media(max-width:800px){
+
+header{
+flex-direction:column;
+align-items:flex-start;
+gap:14px;
+}
+
+nav{
+justify-content:flex-start;
+}
+
+main{
+padding:40px 18px;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.brand span{
+font-size:16px;
+}
+
+}
+
 </style>
 
 </head>
@@ -230,9 +306,10 @@ border-top:1px solid #1c2a44;
 
 <header>
 
-<div class="logo-text">
-Campos Melo & Silva Machado Advocacia
-</div>
+<a href="index.html" class="brand">
+<img src="logo.png" alt="CMSM Advocacia">
+<span>Campos Melo &amp; Silva Machado Advocacia</span>
+</a>
 
 <nav>
 <a href="#areas">Atuação</a>
@@ -248,7 +325,7 @@ Campos Melo & Silva Machado Advocacia
 
 <img src="logo.png" alt="CMSM Advocacia">
 
-<h1>Campos Melo & Silva Machado Advocacia</h1>
+<h1>Campos Melo &amp; Silva Machado Advocacia</h1>
 
 <p>
 Consultoria jurídica com foco técnico, atenção estratégica e comunicação transparente.
@@ -381,21 +458,23 @@ A CMSM Advocacia atua com profissionalismo e transparência, prestando serviços
 
 <h2>Contato</h2>
 
-<div class="contact">
+<div class="contact-grid">
 
-<p>
-<strong>WhatsApp:</strong>
-<a href="https://wa.me/5512974063026">
-+55 12 97406-3026
+<div class="contact-card">
+<h3>WhatsApp</h3>
+<p>Atendimento direto para orientações iniciais e encaminhamento do caso.</p>
+<a class="contact-button" href="https://wa.me/5512974063026?text=Olá,%20vim%20pelo%20site%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orientação.">
+Chamar no WhatsApp
 </a>
-</p>
+</div>
 
-<p>
-<strong>Email:</strong>
-<a href="mailto:contato@cmsm.com.br">
-contato@cmsm.com.br
+<div class="contact-card">
+<h3>E-mail</h3>
+<p>Envie sua mensagem para contato institucional do escritório.</p>
+<a class="contact-button secondary" href="mailto:contato@cmsm.com.br">
+Enviar e-mail
 </a>
-</p>
+</div>
 
 </div>
 
