@@ -4,13 +4,19 @@
 
 <meta charset="utf-8">
 
-<title>Divórcio | CMSM Advocacia</title>
+<title>Advogado para Divórcio | Divórcio Consensual e Litigioso | CMSM Advocacia</title>
 
-<meta name="description" content="Advogado para divórcio consensual ou litigioso. Atendimento online. Tire suas dúvidas e resolva seu divórcio com orientação jurídica.">
+<meta name="description" content="Precisa de advogado para divórcio? Entenda como funciona, tire suas dúvidas e fale agora no WhatsApp. Divórcio consensual ou litigioso, com ou sem bens, com ou sem filhos.">
 
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
+<meta name="robots" content="index,follow">
+
 <style>
+
+*{
+box-sizing:border-box;
+}
 
 body{
 margin:0;
@@ -24,84 +30,295 @@ header{
 background:#071120;
 padding:18px 24px;
 display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #1c2a44;
+gap:20px;
+}
+
+.brand{
+display:flex;
 align-items:center;
 gap:12px;
-border-bottom:1px solid #1c2a44;
+text-decoration:none;
+color:#ffffff;
 }
 
-header img{
-height:48px;
+.brand img{
+height:52px;
+width:auto;
+display:block;
 }
 
-header span{
+.brand span{
 font-weight:700;
 font-size:18px;
-color:#ffffff;
+line-height:1.2;
+}
+
+nav{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:#f8f8f8;
+text-decoration:none;
+font-size:15px;
+font-weight:600;
+}
+
+nav a:hover{
+text-decoration:underline;
 }
 
 main{
-max-width:900px;
+max-width:980px;
 margin:auto;
-padding:60px 24px;
+padding:56px 24px;
 }
 
-h1{
-font-size:34px;
-margin-top:0;
+.hero{
+text-align:center;
+padding:20px 0 10px 0;
+}
+
+.hero img{
+height:110px;
+width:auto;
+display:block;
+margin:0 auto 22px auto;
+}
+
+.hero h1{
+margin:0;
+font-size:38px;
+line-height:1.2;
 color:#ffffff;
 }
 
-h2{
-margin-top:50px;
-color:#ffffff;
-}
-
-p{
+.hero p{
+margin:14px auto 0 auto;
+font-size:18px;
 color:#b7c2da;
-}
-
-.box{
-background:#101a2d;
-border:1px solid #1e2b45;
-border-radius:12px;
-padding:20px;
-margin-top:20px;
+max-width:760px;
 }
 
 .cta{
-margin-top:30px;
+margin-top:28px;
+display:flex;
+justify-content:center;
+gap:14px;
+flex-wrap:wrap;
 }
 
 .cta a{
 display:inline-block;
-background:#25d366;
-color:white;
-padding:14px 20px;
-border-radius:8px;
+padding:14px 22px;
+border-radius:10px;
 text-decoration:none;
 font-weight:700;
+font-size:16px;
+}
+
+.cta-primary{
+background:#25d366;
+color:#ffffff;
+}
+
+.cta-secondary{
+background:#1b2a46;
+color:#ffffff;
+}
+
+.section{
+margin-top:56px;
+}
+
+.section h2{
+font-size:28px;
+color:#ffffff;
+margin-bottom:18px;
+}
+
+.lead{
+font-size:17px;
+color:#c7d2e6;
+}
+
+.grid{
+display:grid;
+gap:24px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+
+.card{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:22px;
+background:#101a2d;
+}
+
+.card h3{
+margin-top:0;
+margin-bottom:10px;
+font-size:21px;
+color:#ffffff;
+}
+
+.card p{
+margin:0;
+font-size:15px;
+color:#b7c2da;
+}
+
+.list-box{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:22px;
+background:#101a2d;
+}
+
+.list-box ul{
+margin:0;
+padding-left:20px;
+}
+
+.list-box li{
+margin-bottom:10px;
+color:#b7c2da;
+}
+
+.highlight{
+border:1px solid #2b4b7f;
+background:#0f1f38;
+border-radius:12px;
+padding:22px;
+}
+
+.highlight p{
+margin:0;
+color:#dbe6f7;
+}
+
+.steps{
+display:grid;
+gap:24px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+
+.step{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:20px;
+background:#101a2d;
+}
+
+.step-number{
+display:inline-block;
+width:34px;
+height:34px;
+border-radius:999px;
+background:#25d366;
+color:#ffffff;
+text-align:center;
+line-height:34px;
+font-weight:700;
+margin-bottom:12px;
+}
+
+.step h3{
+margin:0 0 10px 0;
+font-size:20px;
+color:#ffffff;
+}
+
+.step p{
+margin:0;
+font-size:15px;
+color:#b7c2da;
 }
 
 .faq-item{
-margin-top:20px;
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:18px 20px;
+background:#101a2d;
+margin-bottom:16px;
 }
 
 .faq-item strong{
 display:block;
+margin-bottom:8px;
+font-size:18px;
 color:#ffffff;
-margin-bottom:6px;
+}
+
+.faq-item p{
+margin:0;
+color:#b7c2da;
+}
+
+.contact-box{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:24px;
+background:#101a2d;
+text-align:center;
+}
+
+.contact-box p{
+color:#b7c2da;
 }
 
 footer{
 margin-top:60px;
 background:#071120;
-padding:26px;
+color:#9fb0cf;
+padding:26px 24px;
 text-align:center;
 font-size:14px;
-color:#9fb0cf;
 border-top:1px solid #1c2a44;
 }
 
+@media(max-width:800px){
+
+header{
+flex-direction:column;
+align-items:flex-start;
+gap:14px;
+}
+
+nav{
+justify-content:flex-start;
+}
+
+main{
+padding:40px 18px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.hero img{
+height:90px;
+}
+
+.brand span{
+font-size:16px;
+}
+
+.section h2{
+font-size:24px;
+}
+
+}
 </style>
 
 </head>
@@ -110,115 +327,274 @@ border-top:1px solid #1c2a44;
 
 <header>
 
-<img src="logo.png">
-
+<a href="index.html" class="brand">
+<img src="logo.png" alt="CMSM Advocacia">
 <span>CMSM Advocacia</span>
+</a>
+
+<nav>
+<a href="index.html">Início</a>
+<a href="#como-funciona">Como funciona</a>
+<a href="#duvidas">Dúvidas</a>
+<a href="#contato">Contato</a>
+</nav>
 
 </header>
 
 <main>
 
-<h1>Divórcio</h1>
+<section class="hero">
+
+<img src="logo.png" alt="CMSM Advocacia">
+
+<h1>Precisa se divorciar?</h1>
 
 <p>
-Se o casamento chegou ao fim, o divórcio é o caminho legal para encerrar a relação.
+Entenda seus direitos, tire suas dúvidas e fale com advogado. Atendimento para divórcio consensual ou litigioso, com ou sem filhos, com ou sem bens.
 </p>
 
+<div class="cta">
+<a class="cta-primary" href="https://wa.me/5512974063026?text=Olá,%20preciso%20de%20orientação%20sobre%20divórcio.">Falar agora no WhatsApp</a>
+<a class="cta-secondary" href="#duvidas">Ver dúvidas frequentes</a>
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="highlight">
 <p>
-Hoje o processo é mais simples do que muitas pessoas imaginam. Em muitos casos é possível resolver tudo de forma rápida e organizada.
+Muita gente adia o divórcio por medo, dúvida ou falta de informação. Na prática, o primeiro passo é entender o seu caso: se há acordo, se existem filhos, se existem bens e qual é o melhor caminho para resolver isso.
 </p>
+</div>
 
-<div class="box">
+</section>
 
-<strong>O divórcio pode envolver:</strong>
+<section class="section">
 
+<h2>Quando procurar ajuda para o divórcio</h2>
+
+<div class="list-box">
 <ul>
-<li>divisão de bens</li>
-<li>guarda de filhos</li>
-<li>pensão alimentícia</li>
-<li>definição de visitas</li>
+<li>quando o relacionamento acabou e você quer resolver a situação de forma correta;</li>
+<li>quando há bens para dividir;</li>
+<li>quando existem filhos menores;</li>
+<li>quando há discussão sobre pensão;</li>
+<li>quando a outra pessoa não quer colaborar;</li>
+<li>quando você quer entender seus direitos antes de tomar qualquer decisão.</li>
 </ul>
-
 </div>
 
 <div class="cta">
+<a class="cta-primary" href="https://wa.me/5512974063026?text=Olá,%20quero%20entender%20como%20funciona%20o%20divórcio.">Quero entender meu caso</a>
+</div>
 
-<a href="https://wa.me/5512974063026?text=Olá,%20preciso%20de%20orientação%20sobre%20divórcio">
-Falar com advogado no WhatsApp
-</a>
+</section>
+
+<section class="section">
+
+<h2>O que normalmente precisa ser resolvido</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Fim do casamento</h3>
+<p>Formalizar o divórcio para encerrar a relação perante a lei.</p>
+</div>
+
+<div class="card">
+<h3>Partilha de bens</h3>
+<p>Entender o que deve ou não ser dividido, de acordo com a situação do casal.</p>
+</div>
+
+<div class="card">
+<h3>Guarda dos filhos</h3>
+<p>Definir como ficará a guarda e a rotina das crianças.</p>
+</div>
+
+<div class="card">
+<h3>Pensão alimentícia</h3>
+<p>Verificar se existe necessidade de pensão e como isso será definido.</p>
+</div>
+
+<div class="card">
+<h3>Visitas e convivência</h3>
+<p>Organizar a convivência com os filhos da forma mais segura e clara possível.</p>
+</div>
+
+<div class="card">
+<h3>Acordo ou processo</h3>
+<p>Entender se o caso pode ser resolvido com acordo ou se será necessário discutir judicialmente.</p>
+</div>
 
 </div>
+
+</section>
+
+<section id="como-funciona" class="section">
+
+<h2>Como funciona o atendimento</h2>
+
+<div class="steps">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>Análise inicial</h3>
+<p>Você explica a situação e informa o básico: se há filhos, bens e acordo ou conflito.</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3>Orientação</h3>
+<p>É feito o enquadramento do caso para entender qual é o melhor caminho.</p>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<h3>Definição da estratégia</h3>
+<p>Se houver possibilidade de acordo, isso é avaliado. Se houver conflito, o caminho jurídico adequado também é definido.</p>
+</div>
+
+<div class="step">
+<div class="step-number">4</div>
+<h3>Condução do caso</h3>
+<p>O procedimento é conduzido com acompanhamento e orientação ao longo do caminho.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Por que falar com advogado antes de decidir sozinho</h2>
+
+<div class="list-box">
+<ul>
+<li>para evitar erro na divisão de bens;</li>
+<li>para não assumir obrigações sem entender as consequências;</li>
+<li>para saber como ficam filhos, visitas e pensão;</li>
+<li>para entender se existe acordo possível;</li>
+<li>para agir com mais segurança desde o início.</li>
+</ul>
+</div>
+
+<div class="cta">
+<a class="cta-primary" href="https://wa.me/5512974063026?text=Olá,%20quero%20receber%20orientação%20sobre%20meu%20divórcio.">Receber orientação agora</a>
+</div>
+
+</section>
+
+<section id="duvidas" class="section">
 
 <h2>Dúvidas frequentes sobre divórcio</h2>
 
 <div class="faq-item">
-<strong>1. Precisa do consentimento do outro para se divorciar?</strong>
-Não. A lei permite o divórcio mesmo que apenas um dos dois queira.
+<strong>1. Precisa da concordância do outro para se divorciar?</strong>
+<p>Não. O divórcio pode acontecer mesmo que apenas um queira.</p>
 </div>
 
 <div class="faq-item">
 <strong>2. Precisa explicar o motivo do divórcio?</strong>
-Não. Hoje não é necessário apresentar motivo para se divorciar.
+<p>Não. Não é necessário justificar o motivo do fim do casamento.</p>
 </div>
 
 <div class="faq-item">
-<strong>3. Quanto tempo demora um divórcio?</strong>
-Depende do caso. Quando há acordo, pode ser rápido. Quando existe conflito, pode levar mais tempo.
+<strong>3. Quanto tempo demora?</strong>
+<p>Depende do caso. Quando há acordo costuma ser mais rápido. Quando há conflito, pode levar mais tempo.</p>
 </div>
 
 <div class="faq-item">
-<strong>4. É possível fazer divórcio sem ir ao fórum?</strong>
-Sim. Em alguns casos é possível resolver em cartório ou com acompanhamento jurídico remoto.
+<strong>4. Dá para fazer divórcio em cartório?</strong>
+<p>Em alguns casos, sim. Isso depende da situação concreta e precisa ser analisado corretamente.</p>
 </div>
 
 <div class="faq-item">
-<strong>5. Quem fica com os filhos?</strong>
-O juiz analisa o que é melhor para a criança. A guarda compartilhada é comum.
+<strong>5. Se houver filhos menores, muda alguma coisa?</strong>
+<p>Sim. Quando existem filhos menores, a situação exige cuidado especial com guarda, convivência e pensão.</p>
 </div>
 
 <div class="faq-item">
-<strong>6. É obrigatório pagar pensão?</strong>
-Depende da situação financeira e da necessidade dos filhos.
+<strong>6. Quem fica com os filhos?</strong>
+<p>Isso depende do caso. O importante é definir o que for melhor para a criança e possível na prática.</p>
 </div>
 
 <div class="faq-item">
-<strong>7. Como funciona a divisão dos bens?</strong>
-Depende do regime de casamento e dos bens adquiridos durante a relação.
+<strong>7. Sempre existe pensão alimentícia?</strong>
+<p>Não automaticamente. A necessidade e a forma como isso será tratado dependem do caso concreto.</p>
 </div>
 
 <div class="faq-item">
-<strong>8. É possível divorciar mesmo morando na mesma casa?</strong>
-Sim. A separação de fato não impede o divórcio.
+<strong>8. Como funciona a divisão dos bens?</strong>
+<p>Depende do regime de bens e do que foi construído durante a relação.</p>
 </div>
 
 <div class="faq-item">
-<strong>9. Precisa de advogado para se divorciar?</strong>
-Sim. A lei exige a participação de advogado para formalizar o divórcio.
+<strong>9. Precisa dividir dívida também?</strong>
+<p>Em alguns casos, sim. Isso depende da origem da dívida e da situação do casal.</p>
 </div>
 
 <div class="faq-item">
-<strong>10. Quem paga os custos do processo?</strong>
-Isso pode ser combinado entre as partes ou definido pelo juiz.
+<strong>10. Mesmo se o outro não quiser assinar, o divórcio pode sair?</strong>
+<p>Sim. A falta de assinatura do outro não impede o divórcio.</p>
 </div>
 
-<p style="margin-top:40px;">
-Cada caso é diferente. Entrando em contato é possível esclarecer outras dúvidas e entender qual é o melhor caminho para a sua situação.
+<div class="faq-item">
+<strong>11. Posso me divorciar mesmo morando na mesma casa?</strong>
+<p>Sim. Isso não impede o divórcio.</p>
+</div>
+
+<div class="faq-item">
+<strong>12. É possível resolver tudo morando em cidades diferentes?</strong>
+<p>Em muitos casos, sim. O atendimento pode começar e ser conduzido de forma remota.</p>
+</div>
+
+<div class="faq-item">
+<strong>13. Precisa de advogado?</strong>
+<p>Sim. O acompanhamento jurídico é necessário para formalizar corretamente o divórcio.</p>
+</div>
+
+<div class="faq-item">
+<strong>14. É melhor resolver logo ou esperar?</strong>
+<p>Depende da situação, mas em muitos casos entender o cenário cedo evita erro, desgaste e prejuízo.</p>
+</div>
+
+</section>
+
+<section id="contato" class="section">
+
+<h2>Fale agora e entenda seu caso</h2>
+
+<div class="contact-box">
+<p>
+Para facilitar, envie no WhatsApp:
+</p>
+
+<div class="list-box" style="text-align:left; margin-top:18px;">
+<ul>
+<li>sua cidade;</li>
+<li>se há filhos menores;</li>
+<li>se existem bens para dividir;</li>
+<li>se há acordo ou conflito;</li>
+<li>um resumo curto do que está acontecendo.</li>
+</ul>
+</div>
+
+<p style="margin-top:22px;">
+Entrando em contato, também será possível esclarecer outras dúvidas que possam existir no seu caso.
 </p>
 
 <div class="cta">
-
-<a href="https://wa.me/5512974063026?text=Olá,%20tenho%20dúvidas%20sobre%20divórcio">
-Tirar dúvidas sobre divórcio
-</a>
-
+<a class="cta-primary" href="https://wa.me/5512974063026?text=Olá,%20vim%20pela%20página%20de%20divórcio%20e%20quero%20entender%20meu%20caso.">Falar com advogado no WhatsApp</a>
 </div>
+</div>
+
+</section>
 
 </main>
 
 <footer>
-
 © 2026 CMSM Advocacia
-
 </footer>
 
 </body>
