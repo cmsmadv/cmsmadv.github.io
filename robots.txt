@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.cmsm.com.br/sitemap.xml
+Sitemap: https://www.cmsm.com.br/sitemap.txt
