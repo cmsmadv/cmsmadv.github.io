@@ -1,62 +1,492 @@
-<!DOCTYPE html>
-          <li>Foco especial em buscas e captação no Estado de São Paulo.</li>
-          <li>Estrutura pronta para Search Console, sitemap, robots e indexação manual.</li>
-          <li>Chamadas claras para WhatsApp com mensagens segmentadas por área.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>CMSM Advocacia | Consultoria Jurídica Estratégica</title>
+<meta name="description" content="CMSM Advocacia — atuação em divórcio, partilha, guarda e pensão, inventários, execuções de títulos, mandados de segurança, direito digital e fraudes bancárias.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow">
 
-  <section id="contato">
-    <div class="container cta-banner">
-      <div class="section-head">
-        <div>
-          <h2>Explique seu caso e receba orientação jurídica inicial.</h2>
-          <p>Se o seu problema envolve divórcio, inventário, cobrança, fraude bancária, direito digital, contencioso cível ou mandado de segurança, o primeiro passo é apresentar a situação com objetividade.</p>
-        </div>
-      </div>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
-        <a class="btn btn-secondary" href="mailto:contato@cmsm.com.br">Enviar e-mail</a>
-      </div>
-    </div>
-  </section>
+<style>
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif;
+background:#0b1220;
+color:#e8edf6;
+line-height:1.6;
+}
+
+header{
+background:#071120;
+padding:18px 24px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #1c2a44;
+gap:20px;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+text-decoration:none;
+color:#ffffff;
+}
+
+.brand img{
+height:52px;
+width:auto;
+display:block;
+}
+
+.brand span{
+font-weight:700;
+font-size:18px;
+line-height:1.2;
+}
+
+nav{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:#f8f8f8;
+text-decoration:none;
+font-size:15px;
+font-weight:600;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+main{
+padding:60px 24px;
+max-width:1200px;
+margin:auto;
+}
+
+.hero{
+text-align:center;
+padding:40px 0;
+}
+
+.hero img{
+height:120px;
+width:auto;
+margin-bottom:22px;
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+.hero h1{
+margin:0;
+font-size:34px;
+font-weight:700;
+color:#ffffff;
+}
+
+.hero p{
+margin-top:12px;
+font-size:18px;
+color:#b6c2da;
+max-width:720px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.cta{
+margin-top:25px;
+}
+
+.cta a{
+display:inline-block;
+background:#25d366;
+color:white;
+padding:12px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:700;
+}
+
+.section{
+margin-top:70px;
+}
+
+.section h2{
+font-size:28px;
+color:#ffffff;
+margin-bottom:20px;
+}
+
+.tags{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-bottom:20px;
+}
+
+.tag{
+background:#101a2d;
+border:1px solid #1e2b45;
+padding:8px 14px;
+border-radius:999px;
+font-size:14px;
+color:#c4d0e6;
+}
+
+.grid{
+display:grid;
+gap:24px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.card{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:20px;
+background:#101a2d;
+transition:0.2s;
+height:100%;
+}
+
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 25px rgba(0,0,0,0.35);
+border-color:#3c66ff;
+}
+
+.card a{
+text-decoration:none;
+color:inherit;
+display:block;
+height:100%;
+}
+
+.card h3{
+margin-top:0;
+margin-bottom:10px;
+font-size:20px;
+color:#ffffff;
+}
+
+.card p{
+margin:0;
+font-size:15px;
+color:#b7c2da;
+}
+
+.method-grid{
+display:grid;
+gap:24px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.method-card{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:20px;
+background:#101a2d;
+}
+
+.method-card h3{
+margin-top:0;
+margin-bottom:10px;
+font-size:20px;
+color:#ffffff;
+}
+
+.method-card p{
+margin:0;
+font-size:15px;
+color:#b7c2da;
+}
+
+.about{
+max-width:700px;
+margin:auto;
+text-align:center;
+color:#b6c2da;
+font-size:16px;
+}
+
+.contact-grid{
+display:grid;
+gap:24px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+}
+
+.contact-card{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:20px;
+background:#101a2d;
+}
+
+.contact-card h3{
+margin-top:0;
+margin-bottom:10px;
+font-size:20px;
+color:#ffffff;
+}
+
+.contact-card p{
+margin:0 0 16px 0;
+font-size:15px;
+color:#b7c2da;
+}
+
+.contact-button{
+display:inline-block;
+background:#25d366;
+color:#ffffff;
+padding:12px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:700;
+}
+
+.contact-button.secondary{
+background:#1b2a46;
+color:#ffffff;
+}
+
+footer{
+margin-top:60px;
+background:#071120;
+color:#9fb0cf;
+padding:26px 24px;
+text-align:center;
+font-size:14px;
+border-top:1px solid #1c2a44;
+}
+
+@media(max-width:800px){
+header{
+flex-direction:column;
+align-items:flex-start;
+gap:14px;
+}
+
+nav{
+justify-content:flex-start;
+}
+
+main{
+padding:40px 18px;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.brand span{
+font-size:16px;
+}
+
+.hero img{
+height:96px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<a href="index.html" class="brand">
+<img src="logo.png" alt="CMSM Advocacia">
+<span>CMSM Advocacia</span>
+</a>
+
+<nav>
+<a href="#areas">Atuação</a>
+<a href="#metodo">Método</a>
+<a href="#contato">Contato</a>
+</nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<img src="logo.png" alt="CMSM Advocacia">
+
+<h1>Campos Melo &amp; Silva Machado Advocacia</h1>
+
+<p>
+Consultoria jurídica com foco técnico, atenção estratégica e comunicação transparente.
+</p>
+
+<div class="cta">
+<a href="https://wa.me/5512974063026?text=Olá,%20vim%20pelo%20site%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orientação.">
+Falar no WhatsApp
+</a>
+</div>
+
+</section>
+
+<section id="areas" class="section">
+
+<h2>Áreas de Atuação</h2>
+
+<div class="tags">
+<span class="tag">Consultoria</span>
+<span class="tag">Contencioso</span>
+<span class="tag">Prevenção</span>
+<span class="tag">Atendimento online</span>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<a href="consultoria-juridica.html">
+<h3>Consultoria jurídica estratégica</h3>
+<p>Análise técnica do problema e orientação para tomada de decisões.</p>
+</a>
+</div>
+
+<div class="card">
+<a href="execucao-titulos.html">
+<h3>Execução de títulos</h3>
+<p>Cobrança judicial e recuperação de crédito.</p>
+</a>
+</div>
+
+<div class="card">
+<a href="inventario.html">
+<h3>Inventários</h3>
+<p>Inventário judicial ou extrajudicial e regularização patrimonial.</p>
+</a>
+</div>
+
+<div class="card">
+<a href="divorcio.html">
+<h3>Divórcio</h3>
+<p>Dissolução matrimonial consensual ou litigiosa.</p>
+</a>
+</div>
+
+<div class="card">
+<a href="partilha-bens.html">
+<h3>Partilha de bens</h3>
+<p>Divisão patrimonial decorrente de dissolução conjugal.</p>
+</a>
+</div>
+
+<div class="card">
+<a href="guarda-pensao.html">
+<h3>Guarda e pensão</h3>
+<p>Regulação de guarda, convivência e alimentos.</p>
+</a>
+</div>
+
+<div class="card">
+<a href="direito-digital.html">
+<h3>Direito digital</h3>
+<p>Conflitos envolvendo ambiente online e provas digitais.</p>
+</a>
+</div>
+
+<div class="card">
+<a href="fraudes-bancarias.html">
+<h3>Fraudes bancárias</h3>
+<p>Golpes, transferências indevidas e responsabilidade bancária.</p>
+</a>
+</div>
+
+<div class="card">
+<a href="mandado-seguranca.html">
+<h3>Mandado de segurança</h3>
+<p>Proteção contra atos ilegais ou abusivos da administração pública.</p>
+</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="metodo" class="section">
+
+<h2>Forma de Atuação</h2>
+
+<div class="method-grid">
+
+<div class="method-card">
+<h3>Análise</h3>
+<p>Estudo técnico da situação e levantamento dos elementos relevantes do caso.</p>
+</div>
+
+<div class="method-card">
+<h3>Estratégia</h3>
+<p>Definição do melhor caminho jurídico, riscos envolvidos e alternativas possíveis.</p>
+</div>
+
+<div class="method-card">
+<h3>Execução</h3>
+<p>Atuação técnica e acompanhamento do caso com comunicação clara e objetiva.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Sobre o Escritório</h2>
+
+<p class="about">
+A CMSM Advocacia atua com profissionalismo e transparência, prestando serviços jurídicos com clareza de método e comunicação objetiva.
+</p>
+
+</section>
+
+<section id="contato" class="section">
+
+<h2>Contato</h2>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+<h3>WhatsApp</h3>
+<p>Atendimento direto para orientações iniciais e encaminhamento do caso.</p>
+<a class="contact-button" href="https://wa.me/5512974063026?text=Olá,%20vim%20pelo%20site%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orientação.">
+Chamar no WhatsApp
+</a>
+</div>
+
+<div class="contact-card">
+<h3>E-mail</h3>
+<p>Envie sua mensagem para contato institucional do escritório.</p>
+<a class="contact-button secondary" href="mailto:contato@cmsm.com.br">
+Enviar e-mail
+</a>
+</div>
+
+</div>
+
+</section>
+
 </main>
 
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <h3>Campos Melo & Silva Machado Advocacia</h3>
-      <p>Atendimento jurídico com foco em solução, clareza estratégica e comunicação objetiva. Atuação em todo o Brasil, com atenção especial ao Estado de São Paulo e suporte digital para casos que comportam condução remota.</p>
-      <p class="small">WhatsApp: <a href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica." target="_blank" rel="noopener noreferrer">(12) 97406-3026</a><br>E-mail: <a href="mailto:contato@cmsm.com.br">contato@cmsm.com.br</a></p>
-    </div>
-    <div>
-      <h4>Áreas atendidas</h4>
-      <ul>
-        <li><a href="divorcio.html">Divórcio</a></li>
-        <li><a href="partilha-bens.html">Partilha de bens</a></li>
-        <li><a href="guarda-pensao.html">Guarda e pensão</a></li>
-        <li><a href="inventario.html">Inventário</a></li>
-        <li><a href="execucao-titulos.html">Execução de títulos</a></li>
-        <li><a href="fraudes-bancarias.html">Fraudes bancárias</a></li>
-        <li><a href="mandado-seguranca.html">Mandado de segurança</a></li>
-        <li><a href="consultoria-juridica.html">Consultoria jurídica</a></li>
-        <li><a href="direito-digital.html">Direito digital</a></li>
-        <li><a href="contencioso-civel.html">Contencioso cível</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Atendimento</h4>
-      <ul>
-        <li>Atendimento online nacional</li>
-        <li>Ênfase no Estado de São Paulo</li>
-        <li>Análise inicial por WhatsApp</li>
-        <li>Estratégia jurídica personalizada</li>
-      </ul>
-    </div>
-  </div>
-  <div class="container footer-bottom">© 2026 CMSM Advocacia. Todos os direitos reservados.</div>
+<footer>
+© 2026 CMSM Advocacia — Todos os direitos reservados.
 </footer>
-<script src="script.js"></script>
+
 </body>
 </html>
