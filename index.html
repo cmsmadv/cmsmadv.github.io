@@ -7,35 +7,7 @@
 <meta name="description" content="CMSM Advocacia — atendimento jurídico online em todo o Brasil. Atuação em contratos, divórcio, partilha, guarda e pensão, inventários, execuções de títulos, mandados de segurança, direito digital e fraudes bancárias.">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="index,follow">
-<meta name="theme-color" content="#0b1220">
-<meta name="author" content="CMSM Advocacia">
 <link rel="canonical" href="https://www.cmsm.com.br/">
-
-<meta property="og:locale" content="pt_BR">
-<meta property="og:type" content="website">
-<meta property="og:title" content="CMSM Advocacia | Consultoria Jurídica Estratégica">
-<meta property="og:description" content="Atendimento jurídico online em todo o Brasil.">
-<meta property="og:url" content="https://www.cmsm.com.br/">
-<meta property="og:site_name" content="CMSM Advocacia">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CMSM Advocacia | Consultoria Jurídica Estratégica">
-<meta name="twitter:description" content="Atendimento jurídico online em todo o Brasil.">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LegalService",
-  "name": "Campos Melo & Silva Machado Advocacia",
-  "url": "https://www.cmsm.com.br/",
-  "telephone": "+55 12 97406-3026",
-  "email": "contato@cmsm.com.br",
-  "areaServed": {
-    "@type": "Country",
-    "name": "Brasil"
-  }
-}
-</script>
 
 <style>
 *{box-sizing:border-box;}
@@ -55,7 +27,6 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 border-bottom:1px solid #1c2a44;
-gap:20px;
 }
 
 .brand{
@@ -73,30 +44,28 @@ font-weight:700;
 font-size:18px;
 }
 
-nav{
-display:flex;
-gap:18px;
-flex-wrap:wrap;
-}
-
-nav a{
-color:#f8f8f8;
-text-decoration:none;
-font-size:15px;
-font-weight:600;
-}
-
 main{
 padding:60px 24px;
 max-width:1200px;
 margin:auto;
 }
 
-.hero{text-align:center;}
+.hero{
+text-align:center;
+}
 
 .hero img{
 height:120px;
-margin-bottom:22px;
+margin-bottom:16px;
+}
+
+/* NOVO: nome do escritório */
+.nome-escritorio{
+font-family: "Garamond", "Times New Roman", serif;
+font-size:22px;
+color:#ffffff;
+margin-bottom:18px;
+letter-spacing:0.5px;
 }
 
 .hero h1{
@@ -113,7 +82,9 @@ max-width:820px;
 margin:auto;
 }
 
-.cta{margin-top:25px;}
+.cta{
+margin-top:25px;
+}
 
 .cta a{
 display:inline-block;
@@ -123,14 +94,6 @@ padding:12px 18px;
 border-radius:8px;
 text-decoration:none;
 font-weight:700;
-}
-
-.section{margin-top:70px;}
-
-.section h2{
-font-size:28px;
-color:#fff;
-margin-bottom:20px;
 }
 
 .tags{
@@ -148,6 +111,16 @@ padding:8px 14px;
 border-radius:999px;
 font-size:14px;
 color:#c4d0e6;
+}
+
+.section{
+margin-top:70px;
+}
+
+.section h2{
+font-size:28px;
+color:#fff;
+margin-bottom:20px;
 }
 
 .grid{
@@ -213,11 +186,6 @@ font-size:14px;
 <img src="logo.png">
 <span>CMSM Advocacia</span>
 </a>
-
-<nav>
-<a href="#areas">Atuação</a>
-<a href="#contato">Contato</a>
-</nav>
 </header>
 
 <main>
@@ -225,6 +193,10 @@ font-size:14px;
 <section class="hero">
 
 <img src="logo.png">
+
+<div class="nome-escritorio">
+Campos Melo &amp; Silva Machado Advocacia
+</div>
 
 <h1>Advocacia estratégica para casos patrimoniais, familiares, bancários e contratuais</h1>
 
@@ -244,7 +216,7 @@ Atendimento jurídico online em todo o Brasil, para demandas de divórcio, inven
 
 </section>
 
-<section id="areas" class="section">
+<section class="section">
 
 <h2>Áreas de Atuação</h2>
 
@@ -278,7 +250,7 @@ Atendimento jurídico online em todo o Brasil, para demandas de divórcio, inven
 
 </section>
 
-<section id="contato" class="section">
+<section class="section">
 
 <h2>Contato</h2>
 
