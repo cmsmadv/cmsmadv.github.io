@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divórcio Online | CMSM Advocacia</title>
+  <meta name="description" content="Divórcio online com atendimento em todo o Brasil. Fale com a CMSM Advocacia pelo WhatsApp e receba orientação jurídica com clareza, agilidade e segurança." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Divórcio Online | CMSM Advocacia" />
+  <meta property="og:description" content="Atendimento online em todo o Brasil para divórcio consensual e orientação jurídica estratégica." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #0f172a;
+      --primary-2: #111827;
+      --secondary: #c6a669;
+      --secondary-dark: #a88648;
+      --success: #16a34a;
+      --success-dark: #15803d;
+      --white: #ffffff;
+      --bg: #f8fafc;
+      --bg-soft: #eef2f7;
+      --text: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+      --radius: 20px;
+      --radius-sm: 14px;
+      --container: 1160px;
+      --header-height: 82px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--container));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(15, 23, 42, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .site-header-inner {
+      min-height: var(--header-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      min-width: max-content;
+    }
+
+    .brand-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+
+    .brand-subtitle {
+      color: rgba(255,255,255,0.72);
+      font-size: 0.85rem;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav a {
+      color: rgba(255,255,255,0.84);
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .nav a:hover {
+      color: var(--white);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 22px;
+      border-radius: 999px;
+      border: 0;
+      cursor: pointer;
+      font-size: 0.97rem;
+      font-weight: 700;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+    }
+
+    .button-primary {
+      background: linear-gradient(135deg, var(--success), var(--success-dark));
+      color: var(--white);
+      box-shadow: 0 14px 30px rgba(22, 163, 74, 0.25);
+    }
+
+    .button-outline {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top left, rgba(198,166,105,0.22), transparent 24%),
+        linear-gradient(135deg, #0b1220 0%, #0f172a 45%, #1f2937 100%);
+      color: var(--white);
+      padding: 86px 0 68px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.12fr 0.88fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      font-size: 0.84rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 4.5vw, 4rem);
+      line-height: 1.05;
+      max-width: 11ch;
+      margin-bottom: 18px;
+      font-weight: 800;
+    }
+
+    .hero p {
+      max-width: 58ch;
+      color: rgba(255,255,255,0.82);
+      font-size: 1.05rem;
+    }
+
+    .hero-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 28px 0 30px;
+    }
+
+    .hero-list li {
+      padding: 13px 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.9);
+      font-size: 0.95rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .hero-note {
+      color: rgba(255,255,255,0.66);
+      font-size: 0.92rem;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.98);
+      color: var(--text);
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 28px 70px rgba(2, 6, 23, 0.28);
+    }
+
+    .hero-card h2 {
+      font-size: 1.35rem;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .hero-card > p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .info-box {
+      padding: 18px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #f8fafc, #eef2ff);
+      border: 1px solid #dbeafe;
+      margin-bottom: 18px;
+    }
+
+    .info-box strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 1rem;
+    }
+
+    .checklist {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .checklist li {
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .metrics div {
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 16px;
+      padding: 15px 12px;
+      text-align: center;
+    }
+
+    .metrics strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 2px;
+    }
+
+    section {
+      padding: 78px 0;
+    }
+
+    .section-head {
+      max-width: 780px;
+      margin-bottom: 30px;
+    }
+
+    .section-head span {
+      display: inline-block;
+      color: var(--secondary-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.84rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+      line-height: 1.12;
+      margin-bottom: 12px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    }
+
+    .card-index {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(198,166,105,0.16);
+      color: var(--secondary-dark);
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .card h3 {
+      font-size: 1.14rem;
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .authority {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    }
+
+    .authority-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .authority-main {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: var(--white);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .authority-main h3 {
+      font-size: 1.55rem;
+      line-height: 1.16;
+      margin-bottom: 14px;
+    }
+
+    .authority-main p {
+      color: rgba(255,255,255,0.78);
+      margin-bottom: 20px;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .step {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    .step-number {
+      width: 42px;
+      height: 42px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: var(--white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .step h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .list-box {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    }
+
+    .list-box h3 {
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+    }
+
+    .list-box ul {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .list-box li {
+      position: relative;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .list-box li::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--secondary);
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+
+    details {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px 20px;
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      font-weight: 700;
+      position: relative;
+      padding-right: 24px;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: var(--secondary-dark);
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      color: var(--muted);
+      margin-top: 12px;
+      font-size: 0.96rem;
+    }
+
+    .final-cta {
+      background: linear-gradient(135deg, #0f172a 0%, #1f2937 100%);
+      color: var(--white);
+    }
+
+    .final-cta-wrap {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: center;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 28px;
+      padding: 34px;
+    }
+
+    .final-cta h2 {
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      line-height: 1.12;
+      margin-bottom: 10px;
+    }
+
+    .final-cta p {
+      color: rgba(255,255,255,0.76);
+    }
+
+    .final-box {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 22px;
+      padding: 24px;
+    }
+
+    .final-box strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+
+    .final-box ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin: 0 0 22px;
+      color: rgba(255,255,255,0.86);
+      font-size: 0.95rem;
+    }
+
+    .site-footer {
+      background: #0b1220;
+      color: rgba(255,255,255,0.74);
+      padding: 28px 0 96px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .site-footer p {
+      font-size: 0.9rem;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 60;
+    }
+
+    .floating-whatsapp a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 64px;
+      height: 64px;
+      padding: 0 20px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: var(--white);
+      font-weight: 800;
+      box-shadow: 0 18px 42px rgba(34,197,94,0.35);
+    }
+
+    .sticky-mobile-cta {
+      display: none;
+    }
+
+    @media (max-width: 1100px) {
+      .site-header-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 12px 0;
+      }
+
+      .brand {
+        width: 100%;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-3,
+      .authority-grid,
+      .steps,
+      .split,
+      .final-cta-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        max-width: none;
+      }
+
+      .hero-list,
+      .mini-grid,
+      .metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        gap: 14px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .nav,
+      .header-actions .button-outline {
+        display: none;
+      }
+
+      .site-header-inner {
+        min-height: 72px;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .brand {
+        width: auto;
+        align-items: flex-start;
+      }
+
+      .hero {
+        padding: 56px 0 48px;
+      }
+
+      section {
+        padding: 58px 0;
+      }
+
+      .hero-card,
+      .card,
+      .step,
+      .list-box,
+      .authority-main,
+      .final-box,
+      .final-cta-wrap {
+        padding: 22px;
+      }
+
+      .floating-whatsapp {
+        display: none;
+      }
+
+      .sticky-mobile-cta {
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 70;
+        background: rgba(255,255,255,0.96);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid var(--line);
+        padding: 10px 14px;
+      }
+
+      .sticky-mobile-cta a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header-inner">
+      <a class="brand" href="#topo" aria-label="CMSM Advocacia">
+        <span class="brand-title">CMSM Advocacia</span>
+        <span class="brand-subtitle">Atendimento online em todo o Brasil</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="button button-outline" href="#faq">Tirar dúvidas</a>
+        <a class="button button-primary" href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20quero%20entender%20como%20funciona%20o%20div%C3%B3rcio%20online." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="topo">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Atendimento rápido • Segurança jurídica • Clareza em cada etapa</div>
+          <h1>Divórcio online com orientação jurídica firme e sem enrolação</h1>
+          <p>Resolva seu divórcio consensual com atendimento digital em todo o Brasil, comunicação objetiva e condução estratégica do início ao fim. Você entende o caminho, evita erro e ganha agilidade.</p>
+
+          <ul class="hero-list">
+            <li>Atendimento online em todo o Brasil</li>
+            <li>Análise inicial do caso com rapidez</li>
+            <li>Condução clara do início ao fim</li>
+            <li>Foco em solução prática e segura</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20div%C3%B3rcio%20online." target="_blank" rel="noopener noreferrer">Quero falar agora</a>
+            <a class="button button-outline" href="#como-funciona">Ver como funciona</a>
+          </div>
+
+          <div class="hero-note">Atendimento profissional com foco em agilidade, previsibilidade e redução de desgaste.</div>
+        </div>
+
+        <aside class="hero-card">
+          <h2>Seu caso pode começar a ser resolvido hoje</h2>
+          <p>Fale pelo WhatsApp, descreva seu caso e receba orientação inicial sobre viabilidade, documentos e próximos passos.</p>
+
+          <div class="info-box">
+            <strong>Atendimento objetivo</strong>
+            <span>Sem conversa solta. Você explica o caso e já entende o caminho jurídico mais adequado.</span>
+          </div>
+
+          <ul class="checklist">
+            <li>Entendimento inicial do caso</li>
+            <li>Lista prática dos documentos necessários</li>
+            <li>Explicação clara sobre as etapas</li>
+            <li>Orientação sobre custos e estratégia</li>
+          </ul>
+
+          <a class="button button-primary" style="width:100%;" href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20quero%20iniciar%20meu%20atendimento%20sobre%20div%C3%B3rcio." target="_blank" rel="noopener noreferrer">Iniciar atendimento</a>
+
+          <div class="metrics">
+            <div>
+              <strong>100%</strong>
+              <span>online</span>
+            </div>
+            <div>
+              <strong>Brasil</strong>
+              <span>inteiro</span>
+            </div>
+            <div>
+              <strong>Clareza</strong>
+              <span>jurídica</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="beneficios">
+      <div class="container">
+        <div class="section-head">
+          <span>Por que agir agora</span>
+          <h2>Adiar um divórcio costuma aumentar desgaste, conflito e insegurança</h2>
+          <p>Quando a situação já chegou no limite, o melhor movimento é organizar o caso com orientação séria e reduzir o espaço para erro, demora e desgaste desnecessário.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="card-index">01</div>
+            <h3>Menos confusão</h3>
+            <p>Você entende o que precisa fazer, quais documentos separar e qual caminho tende a ser mais eficiente para o seu caso.</p>
+          </article>
+          <article class="card">
+            <div class="card-index">02</div>
+            <h3>Mais segurança</h3>
+            <p>Evite improviso, informação truncada e decisões precipitadas em um momento que já costuma ser emocionalmente delicado.</p>
+          </article>
+          <article class="card">
+            <div class="card-index">03</div>
+            <h3>Agilidade real</h3>
+            <p>Com orientação adequada desde o início, o processo tende a seguir com muito mais clareza e previsibilidade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="authority">
+      <div class="container authority-grid">
+        <div class="authority-main">
+          <h3>Advocacia estratégica para quem quer resolver, não empurrar o problema</h3>
+          <p>A CMSM Advocacia atua com abordagem direta, análise técnica e atendimento online em todo o Brasil. O foco aqui não é complicar o que já está pesado. É organizar, conduzir e buscar a solução juridicamente adequada.</p>
+          <a class="button button-primary" href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20quero%20analisar%20meu%20caso%20de%20div%C3%B3rcio." target="_blank" rel="noopener noreferrer">Analisar meu caso</a>
+        </div>
+
+        <div class="mini-grid">
+          <article class="card">
+            <h3>Atendimento digital</h3>
+            <p>Você pode iniciar o atendimento sem deslocamento, com comunicação rápida e orientação objetiva.</p>
+          </article>
+          <article class="card">
+            <h3>Clareza jurídica</h3>
+            <p>Sem juridiquês desnecessário. Você entende o que está acontecendo e o que vem pela frente.</p>
+          </article>
+          <article class="card">
+            <h3>Estratégia individual</h3>
+            <p>Cada caso tem suas particularidades. A condução precisa respeitar isso desde o início.</p>
+          </article>
+          <article class="card">
+            <h3>Postura profissional</h3>
+            <p>Organização, seriedade e foco em solução concreta, não em promessas vazias.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona">
+      <div class="container">
+        <div class="section-head">
+          <span>Como funciona</span>
+          <h2>Um fluxo simples para tirar o peso da incerteza</h2>
+          <p>Você não precisa chegar sabendo tudo. Basta iniciar o contato. O restante é conduzido com método.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <div class="step-number">1</div>
+            <h3>Contato inicial</h3>
+            <p>Você envia sua mensagem pelo WhatsApp e informa, de forma simples, o cenário do seu caso.</p>
+          </article>
+          <article class="step">
+            <div class="step-number">2</div>
+            <h3>Análise do caso</h3>
+            <p>É feita uma avaliação inicial para entender viabilidade, necessidade documental e estratégia adequada.</p>
+          </article>
+          <article class="step">
+            <div class="step-number">3</div>
+            <h3>Orientação objetiva</h3>
+            <p>Você recebe direcionamento claro sobre o procedimento, pontos sensíveis e próximos passos.</p>
+          </article>
+          <article class="step">
+            <div class="step-number">4</div>
+            <h3>Condução jurídica</h3>
+            <p>Com a contratação, o caso segue com acompanhamento profissional e foco em solução segura.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <div class="list-box">
+          <h3>Esse atendimento costuma ser indicado para casos como:</h3>
+          <ul>
+            <li>Divórcio consensual com possibilidade de condução online</li>
+            <li>Necessidade de orientação clara sobre documentos e etapas</li>
+            <li>Casais que querem reduzir desgaste e resolver com organização</li>
+            <li>Situações em que a pessoa precisa entender direitos antes de agir</li>
+          </ul>
+        </div>
+
+        <div class="list-box">
+          <h3>O que você ganha ao iniciar agora:</h3>
+          <ul>
+            <li>Visão clara do seu cenário jurídico</li>
+            <li>Redução de incerteza e improviso</li>
+            <li>Mais agilidade na tomada de decisão</li>
+            <li>Atendimento profissional com foco em solução</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span>Dúvidas frequentes</span>
+          <h2>Perguntas comuns antes de iniciar</h2>
+          <p>Essas respostas ajudam a reduzir a ansiedade inicial. O enquadramento final depende da análise concreta do caso.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>O atendimento pode ser feito online?</summary>
+            <p>Sim. O escritório atua com atendimento online em todo o Brasil, o que permite iniciar a análise e conduzir etapas do caso com praticidade e segurança.</p>
+          </details>
+          <details>
+            <summary>Preciso já estar com todos os documentos em mãos?</summary>
+            <p>Não. No contato inicial, você explica sua situação e recebe orientação sobre quais documentos serão necessários.</p>
+          </details>
+          <details>
+            <summary>Meu caso pode ser resolvido mais rápido se eu agir logo?</summary>
+            <p>Em muitos cenários, sim. Quanto antes o caso é organizado, menor tende a ser o espaço para atraso por falta de documento, erro de procedimento ou desgaste desnecessário.</p>
+          </details>
+          <details>
+            <summary>Vocês atendem apenas São Paulo?</summary>
+            <p>Não. O atendimento é online em todo o Brasil.</p>
+          </details>
+          <details>
+            <summary>Como eu começo?</summary>
+            <p>Basta clicar no botão do WhatsApp, informar que deseja falar sobre divórcio e resumir seu caso. A partir daí, você recebe a orientação inicial.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="contato">
+      <div class="container">
+        <div class="final-cta-wrap">
+          <div>
+            <h2>Se o problema já está tirando sua paz, comece a resolver agora</h2>
+            <p>Você não precisa carregar isso sozinho nem perder mais tempo no escuro. Dê o primeiro passo com orientação jurídica séria.</p>
+          </div>
+          <div class="final-box">
+            <strong>Clique e fale diretamente pelo WhatsApp</strong>
+            <ul>
+              <li>Explique seu caso</li>
+              <li>Receba orientação inicial</li>
+              <li>Entenda os próximos passos</li>
+            </ul>
+            <a class="button button-primary" style="width:100%;" href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20quero%20atendimento%20sobre%20div%C3%B3rcio%20online." target="_blank" rel="noopener noreferrer">Falar com a CMSM Advocacia</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>CMSM Advocacia</strong> • Atendimento online em todo o Brasil</p>
+      <p>Esta página tem finalidade informativa e de captação ética de clientes, nos termos da regulamentação profissional aplicável.</p>
+    </div>
+  </footer>
+
+  <div class="floating-whatsapp">
+    <a href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20div%C3%B3rcio%20online." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  </div>
+
+  <div class="sticky-mobile-cta">
+    <a class="button button-primary" href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20div%C3%B3rcio%20online." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+  </div>
+</body>
+</html>
