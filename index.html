@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -7,10 +6,40 @@
 <meta name="description" content="CMSM Advocacia — atendimento jurídico online em todo o Brasil. Atuação em contratos, divórcio, partilha, guarda e pensão, inventários, execuções de títulos, mandados de segurança, direito digital e fraudes bancárias.">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0b1220">
+<meta name="author" content="CMSM Advocacia">
 <link rel="canonical" href="https://www.cmsm.com.br/">
 
+<meta property="og:locale" content="pt_BR">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CMSM Advocacia | Consultoria Jurídica Estratégica">
+<meta property="og:description" content="Atendimento jurídico online em todo o Brasil.">
+<meta property="og:url" content="https://www.cmsm.com.br/">
+<meta property="og:site_name" content="CMSM Advocacia">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CMSM Advocacia | Consultoria Jurídica Estratégica">
+<meta name="twitter:description" content="Atendimento jurídico online em todo o Brasil.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Campos Melo & Silva Machado Advocacia",
+  "url": "https://www.cmsm.com.br/",
+  "telephone": "+55 12 97406-3026",
+  "email": "contato@cmsm.com.br",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Brasil"
+  }
+}
+</script>
+
 <style>
-*{box-sizing:border-box;}
+*{
+box-sizing:border-box;
+}
 
 body{
 margin:0;
@@ -27,6 +56,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 border-bottom:1px solid #1c2a44;
+gap:20px;
 }
 
 .brand{
@@ -37,11 +67,33 @@ text-decoration:none;
 color:#ffffff;
 }
 
-.brand img{height:52px;}
+.brand img{
+height:52px;
+width:auto;
+display:block;
+}
 
 .brand span{
 font-weight:700;
 font-size:18px;
+line-height:1.2;
+}
+
+nav{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:#f8f8f8;
+text-decoration:none;
+font-size:15px;
+font-weight:600;
+}
+
+nav a:hover{
+text-decoration:underline;
 }
 
 main{
@@ -52,26 +104,46 @@ margin:auto;
 
 .hero{
 text-align:center;
+padding:40px 0;
 }
 
 .hero img{
 height:120px;
-margin-bottom:16px;
+width:auto;
+margin-bottom:14px;
+display:block;
+margin-left:auto;
+margin-right:auto;
 }
 
-/* NOVO: nome do escritório */
 .nome-escritorio{
-font-family: "Garamond", "Times New Roman", serif;
-font-size:22px;
-color:#ffffff;
-margin-bottom:18px;
-letter-spacing:0.5px;
+font-family:Garamond,Baskerville,"Times New Roman",serif;
+font-size:30px;
+font-weight:400;
+letter-spacing:1.2px;
+text-transform:uppercase;
+color:#f4f6fb;
+margin-bottom:8px;
+line-height:1.25;
+}
+
+.nome-escritorio-sub{
+font-family:Garamond,Baskerville,"Times New Roman",serif;
+font-size:15px;
+letter-spacing:3px;
+text-transform:uppercase;
+color:#9fb0cf;
+margin-bottom:24px;
 }
 
 .hero h1{
 margin:0;
 font-size:34px;
-color:#fff;
+font-weight:700;
+color:#ffffff;
+max-width:900px;
+margin-left:auto;
+margin-right:auto;
 }
 
 .hero p{
@@ -79,7 +151,8 @@ margin-top:12px;
 font-size:18px;
 color:#b6c2da;
 max-width:820px;
-margin:auto;
+margin-left:auto;
+margin-right:auto;
 }
 
 .cta{
@@ -96,12 +169,21 @@ text-decoration:none;
 font-weight:700;
 }
 
+.section{
+margin-top:70px;
+}
+
+.section h2{
+font-size:28px;
+color:#ffffff;
+margin-bottom:20px;
+}
+
 .tags{
 display:flex;
 gap:12px;
 flex-wrap:wrap;
-justify-content:center;
-margin-top:18px;
+margin-bottom:20px;
 }
 
 .tag{
@@ -113,14 +195,10 @@ font-size:14px;
 color:#c4d0e6;
 }
 
-.section{
-margin-top:70px;
-}
-
-.section h2{
-font-size:28px;
-color:#fff;
-margin-bottom:20px;
+.hero-tags{
+justify-content:center;
+margin-top:18px;
+margin-bottom:0;
 }
 
 .grid{
@@ -135,6 +213,7 @@ border-radius:12px;
 padding:20px;
 background:#101a2d;
 transition:0.2s;
+height:100%;
 }
 
 .card:hover{
@@ -146,15 +225,19 @@ border-color:#3c66ff;
 .card a{
 text-decoration:none;
 color:inherit;
+display:block;
+height:100%;
 }
 
 .card h3{
 margin-top:0;
+margin-bottom:10px;
 font-size:20px;
-color:#fff;
+color:#ffffff;
 }
 
 .card p{
+margin:0;
 font-size:15px;
 color:#b7c2da;
 }
@@ -165,16 +248,139 @@ background:#0f1f17;
 }
 
 .card-faq:hover{
+border-color:#25d366;
 box-shadow:0 10px 25px rgba(37,211,102,0.25);
+}
+
+.method-grid{
+display:grid;
+gap:24px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.method-card{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:20px;
+background:#101a2d;
+}
+
+.method-card h3{
+margin-top:0;
+margin-bottom:10px;
+font-size:20px;
+color:#ffffff;
+}
+
+.method-card p{
+margin:0;
+font-size:15px;
+color:#b7c2da;
+}
+
+.about{
+max-width:760px;
+margin:auto;
+text-align:center;
+color:#b6c2da;
+font-size:16px;
+}
+
+.contact-grid{
+display:grid;
+gap:24px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+}
+
+.contact-card{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:20px;
+background:#101a2d;
+}
+
+.contact-card h3{
+margin-top:0;
+margin-bottom:10px;
+font-size:20px;
+color:#ffffff;
+}
+
+.contact-card p{
+margin:0 0 16px 0;
+font-size:15px;
+color:#b7c2da;
+}
+
+.contact-button{
+display:inline-block;
+background:#25d366;
+color:#ffffff;
+padding:12px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:700;
+}
+
+.contact-button.secondary{
+background:#1b2a46;
+color:#ffffff;
 }
 
 footer{
 margin-top:60px;
 background:#071120;
 color:#9fb0cf;
-padding:26px;
+padding:26px 24px;
 text-align:center;
 font-size:14px;
+border-top:1px solid #1c2a44;
+}
+
+footer p{
+margin:6px 0;
+}
+
+@media(max-width:800px){
+header{
+flex-direction:column;
+align-items:flex-start;
+gap:14px;
+}
+
+nav{
+justify-content:flex-start;
+}
+
+main{
+padding:40px 18px;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.brand span{
+font-size:16px;
+}
+
+.hero img{
+height:96px;
+}
+
+.nome-escritorio{
+font-size:24px;
+letter-spacing:0.8px;
+}
+
+.nome-escritorio-sub{
+font-size:13px;
+letter-spacing:2px;
+}
 }
 </style>
 </head>
@@ -182,21 +388,28 @@ font-size:14px;
 <body>
 
 <header>
+
 <a href="index.html" class="brand">
-<img src="logo.png">
+<img src="logo.png" alt="CMSM Advocacia">
 <span>CMSM Advocacia</span>
 </a>
+
+<nav>
+<a href="#areas">Atuação</a>
+<a href="#metodo">Método</a>
+<a href="#contato">Contato</a>
+</nav>
+
 </header>
 
 <main>
 
 <section class="hero">
 
-<img src="logo.png">
+<img src="logo.png" alt="CMSM Advocacia">
 
-<div class="nome-escritorio">
-Campos Melo &amp; Silva Machado Advocacia
-</div>
+<div class="nome-escritorio">Campos Melo &amp; Silva Machado</div>
+<div class="nome-escritorio-sub">Advocacia</div>
 
 <h1>Advocacia estratégica para casos patrimoniais, familiares, bancários e contratuais</h1>
 
@@ -205,10 +418,12 @@ Atendimento jurídico online em todo o Brasil, para demandas de divórcio, inven
 </p>
 
 <div class="cta">
-<a href="https://wa.me/5512974063026">Falar no WhatsApp</a>
+<a href="https://wa.me/5512974063026?text=Olá,%20vim%20pelo%20site%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orientação.">
+Falar no WhatsApp
+</a>
 </div>
 
-<div class="tags">
+<div class="tags hero-tags">
 <span class="tag">Atendimento online nacional</span>
 <span class="tag">Análise técnica</span>
 <span class="tag">Resposta rápida</span>
@@ -216,35 +431,127 @@ Atendimento jurídico online em todo o Brasil, para demandas de divórcio, inven
 
 </section>
 
-<section class="section">
+<section id="areas" class="section">
 
 <h2>Áreas de Atuação</h2>
 
+<div class="tags">
+<span class="tag">Consultoria</span>
+<span class="tag">Contencioso</span>
+<span class="tag">Prevenção</span>
+<span class="tag">Atendimento online nacional</span>
+</div>
+
 <div class="grid">
 
-<div class="card"><a href="divorcio.html"><h3>Divórcio</h3><p>Dissolução matrimonial com condução técnica.</p></a></div>
+<div class="card">
+<a href="divorcio.html">
+<h3>Divórcio</h3>
+<p>Dissolução matrimonial consensual ou litigiosa, com condução técnica e orientação objetiva.</p>
+</a>
+</div>
 
-<div class="card"><a href="inventario.html"><h3>Inventários</h3><p>Regularização patrimonial e sucessória.</p></a></div>
+<div class="card">
+<a href="inventario.html">
+<h3>Inventários</h3>
+<p>Inventário judicial ou extrajudicial, regularização patrimonial e organização sucessória.</p>
+</a>
+</div>
 
-<div class="card"><a href="fraudes-bancarias.html"><h3>Fraudes bancárias</h3><p>Golpes e responsabilidade bancária.</p></a></div>
+<div class="card">
+<a href="fraudes-bancarias.html">
+<h3>Fraudes bancárias</h3>
+<p>Golpes, transferências indevidas, fraudes em contas e análise de responsabilidade bancária.</p>
+</a>
+</div>
 
-<div class="card"><a href="execucao-titulos.html"><h3>Execução de títulos</h3><p>Recuperação de crédito.</p></a></div>
+<div class="card">
+<a href="execucao-titulos.html">
+<h3>Execução de títulos</h3>
+<p>Cobrança judicial, recuperação de crédito e medidas voltadas à satisfação do débito.</p>
+</a>
+</div>
 
-<div class="card"><a href="contratos.html"><h3>Contratos</h3><p>Elaboração e revisão contratual.</p></a></div>
+<div class="card">
+<a href="contratos.html">
+<h3>Contratos</h3>
+<p>Elaboração, revisão e análise de contratos, com foco em segurança jurídica, prevenção de riscos e clareza das obrigações assumidas.</p>
+</a>
+</div>
 
-<div class="card"><a href="consultoria-juridica.html"><h3>Consultoria</h3><p>Orientação estratégica.</p></a></div>
+<div class="card">
+<a href="consultoria-juridica.html">
+<h3>Consultoria jurídica estratégica</h3>
+<p>Análise técnica do problema, definição de riscos e orientação para tomada de decisões jurídicas seguras.</p>
+</a>
+</div>
 
-<div class="card"><a href="partilha-bens.html"><h3>Partilha</h3><p>Divisão patrimonial.</p></a></div>
+<div class="card">
+<a href="partilha-bens.html">
+<h3>Partilha de bens</h3>
+<p>Divisão patrimonial decorrente de dissolução conjugal, com análise do regime e da prova disponível.</p>
+</a>
+</div>
 
-<div class="card"><a href="guarda-pensao.html"><h3>Guarda e pensão</h3><p>Regulação familiar.</p></a></div>
+<div class="card">
+<a href="guarda-pensao.html">
+<h3>Guarda e pensão</h3>
+<p>Regulação de guarda, convivência e alimentos, inclusive revisão e adequação conforme o caso.</p>
+</a>
+</div>
 
-<div class="card"><a href="direito-digital.html"><h3>Direito digital</h3><p>Conflitos online.</p></a></div>
+<div class="card">
+<a href="direito-digital.html">
+<h3>Direito digital</h3>
+<p>Conflitos envolvendo ambiente online, provas digitais, exposição indevida e medidas jurídicas correlatas.</p>
+</a>
+</div>
 
-<div class="card"><a href="mandado-seguranca.html"><h3>Mandado de segurança</h3><p>Proteção contra ilegalidade.</p></a></div>
+<div class="card">
+<a href="mandado-seguranca.html">
+<h3>Mandado de segurança</h3>
+<p>Proteção contra atos ilegais ou abusivos da administração pública quando houver direito líquido e certo.</p>
+</a>
+</div>
 
-<div class="card"><a href="artigos.html"><h3>Artigos</h3><p>Conteúdo jurídico.</p></a></div>
+<div class="card">
+<a href="artigos.html">
+<h3>Artigos jurídicos</h3>
+<p>Conteúdos informativos e textos jurídicos para orientar o cliente e aprofundar temas relevantes da prática cotidiana.</p>
+</a>
+</div>
 
-<div class="card card-faq"><a href="faq.html"><h3>FAQ</h3><p>Como funciona o atendimento.</p></a></div>
+<div class="card card-faq">
+<a href="faq.html">
+<h3>FAQ</h3>
+<p>Entenda como funciona o atendimento, documentos normalmente úteis e como iniciar seu caso.</p>
+</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="metodo" class="section">
+
+<h2>Forma de Atuação</h2>
+
+<div class="method-grid">
+
+<div class="method-card">
+<h3>Análise</h3>
+<p>Estudo técnico da situação, leitura dos documentos e identificação dos elementos juridicamente relevantes do caso.</p>
+</div>
+
+<div class="method-card">
+<h3>Estratégia</h3>
+<p>Definição do melhor caminho jurídico, dos riscos envolvidos e das alternativas realmente úteis para o cliente.</p>
+</div>
+
+<div class="method-card">
+<h3>Execução</h3>
+<p>Atuação técnica e acompanhamento do caso com comunicação clara, objetiva e compatível com atendimento remoto.</p>
+</div>
 
 </div>
 
@@ -252,20 +559,47 @@ Atendimento jurídico online em todo o Brasil, para demandas de divórcio, inven
 
 <section class="section">
 
+<h2>Sobre o Escritório</h2>
+
+<p class="about">
+A CMSM Advocacia atua com profissionalismo, transparência e método, prestando serviços jurídicos com clareza técnica, comunicação objetiva e estrutura de atendimento online em todo o Brasil.
+</p>
+
+</section>
+
+<section id="contato" class="section">
+
 <h2>Contato</h2>
 
-<div class="cta">
-<a href="https://wa.me/5512974063026">Falar no WhatsApp</a>
+<div class="contact-grid">
+
+<div class="contact-card">
+<h3>WhatsApp</h3>
+<p>Atendimento direto para orientações iniciais, triagem do caso e encaminhamento jurídico.</p>
+<a class="contact-button" href="https://wa.me/5512974063026?text=Olá,%20vim%20pelo%20site%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orientação.">
+Chamar no WhatsApp
+</a>
 </div>
 
-<p style="text-align:center;margin-top:15px;">contato@cmsm.com.br</p>
+<div class="contact-card">
+<h3>E-mail</h3>
+<p>Envie sua mensagem para contato institucional do escritório.</p>
+<a class="contact-button secondary" href="mailto:contato@cmsm.com.br">
+Enviar e-mail
+</a>
+</div>
+
+</div>
 
 </section>
 
 </main>
 
 <footer>
-© 2026 CMSM Advocacia
+<p>© 2026 CMSM Advocacia — Todos os direitos reservados.</p>
+<p>WhatsApp: +55 12 97406-3026</p>
+<p>E-mail: contato@cmsm.com.br</p>
+<p>Atendimento online em todo o Brasil.</p>
 </footer>
 
 </body>
