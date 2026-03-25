@@ -33,6 +33,8 @@ box-sizing:border-box;
 --muted-2:#8fa3c7;
 --green:#25d366;
 --green-2:#1fb958;
+--blue:#1b3b72;
+--blue-2:#254c90;
 --gold:#c8a96b;
 --shadow:0 20px 40px rgba(0,0,0,0.28);
 --radius:12px;
@@ -200,6 +202,7 @@ border-radius:8px;
 font-weight:700;
 text-decoration:none;
 transition:.2s;
+border:1px solid transparent;
 }
 
 .btn-primary{
@@ -221,6 +224,17 @@ color:#fff;
 .btn-secondary:hover{
 transform:translateY(-2px);
 border-color:#3c66ff;
+}
+
+.btn-email{
+background:var(--blue);
+border:1px solid var(--blue-2);
+color:#fff;
+}
+
+.btn-email:hover{
+transform:translateY(-2px);
+background:var(--blue-2);
 }
 
 .pills{
@@ -389,7 +403,7 @@ color:#b7c2da;
 .contact-grid{
 display:grid;
 gap:24px;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 }
 
 .contact-box{
@@ -411,10 +425,11 @@ color:#b7c2da;
 margin:0 0 14px 0;
 }
 
-.contact-box a{
-color:#fff;
-font-weight:700;
-text-decoration:none;
+.contact-actions{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-top:16px;
 }
 
 footer{
@@ -487,10 +502,10 @@ font-size:24px;
 <div class="nome">Campos Melo & Silva Machado</div>
 <div class="sub">Advocacia</div>
 
-<h1>Seu problema jurídico precisa de solução — não de enrolação</h1>
+<h1>Atuação jurídica estratégica, com atendimento online em todo o Brasil</h1>
 
 <p>
-Atendimento direto com advogado para resolver questões familiares, patrimoniais, bancárias, contratuais e digitais em todo o Brasil.
+Atendimento direto com advogado para questões familiares, patrimoniais, bancárias, contratuais e digitais, com análise técnica, orientação clara e encaminhamento jurídico objetivo.
 </p>
 
 <div class="hero-cta">
@@ -719,22 +734,26 @@ Respostas objetivas para dúvidas comuns antes do primeiro contato.
 </section>
 
 <section id="contato" class="section">
-<h2>Fale com um advogado agora</h2>
+<h2>Contato</h2>
 <p class="section-intro">
-O caminho mais rápido para iniciar seu atendimento é pelo WhatsApp. Também é possível encaminhar mensagem por e-mail institucional.
+O caminho mais rápido para iniciar o atendimento é pelo WhatsApp. Também é possível encaminhar mensagem por e-mail institucional.
 </p>
 
 <div class="contact-grid">
 <div class="contact-box">
 <h3>WhatsApp</h3>
 <p>Canal principal para triagem inicial, explicação do problema e encaminhamento objetivo do caso.</p>
+<div class="contact-actions">
 <a class="btn btn-primary" href="https://wa.me/5512974063026">Chamar no WhatsApp</a>
+</div>
 </div>
 
 <div class="contact-box">
 <h3>E-mail</h3>
 <p>Contato institucional para envio de mensagem e complementação de informações.</p>
-<a href="mailto:contato@cmsm.com.br">contato@cmsm.com.br</a>
+<div class="contact-actions">
+<a class="btn btn-email" href="mailto:contato@cmsm.com.br">Enviar e-mail</a>
+</div>
 </div>
 </div>
 </section>
