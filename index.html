@@ -155,14 +155,11 @@ padding:56px 24px 72px;
 }
 
 .hero{
-display:grid;
-grid-template-columns:1.15fr 0.85fr;
-gap:28px;
-align-items:center;
 padding:18px 0 10px;
 }
 
 .hero-copy{
+max-width:860px;
 text-align:left;
 }
 
@@ -268,42 +265,6 @@ font-weight:700;
 background:#0f1b31;
 border:1px solid #223251;
 color:#d5e0f3;
-}
-
-.hero-panel{
-background:linear-gradient(180deg,#101a2d 0%,#0c1627 100%);
-border:1px solid var(--line);
-border-radius:var(--radius);
-padding:26px;
-box-shadow:var(--shadow);
-}
-
-.hero-panel h2{
-font-family:Garamond,Baskerville,"Times New Roman",serif;
-font-size:28px;
-margin:0 0 12px 0;
-}
-
-.hero-panel p{
-margin:0 0 18px 0;
-color:var(--muted);
-font-size:15px;
-}
-
-.hero-list{
-display:grid;
-gap:12px;
-margin:0;
-padding:0;
-list-style:none;
-}
-
-.hero-list li{
-padding:12px 14px;
-border-radius:12px;
-background:#0f1a2c;
-border:1px solid #1f2f4b;
-color:#d6e1f2;
 }
 
 .section{
@@ -528,7 +489,6 @@ color:#fff;
 }
 
 @media(max-width:1020px){
-.hero,
 .grid-3,
 .areas-grid,
 .contact-grid{
@@ -569,7 +529,6 @@ font-size:30px;
 }
 .card h3,
 .contact-box h3,
-.hero-panel h2,
 .cta-band h3{
 font-size:23px;
 }
@@ -627,19 +586,6 @@ A CMSM Advocacia atua em questões familiares, patrimoniais, bancárias, contrat
 <span class="pill">Análise técnica do caso</span>
 <span class="pill">Orientação clara e objetiva</span>
 </div>
-</div>
-
-<div class="hero-panel">
-<h2>Estrutura pensada para quem precisa agir</h2>
-<p>
-O visitante encontra rapidamente o que o escritório faz, entende se sua demanda é atendida e consegue partir, sem ruído, para o contato direto.
-</p>
-<ul class="hero-list">
-<li>Áreas de atuação organizadas por problema real</li>
-<li>Contato acessível desde o topo da página</li>
-<li>Informação clara sobre a forma de atendimento</li>
-<li>Conteúdo jurídico de apoio para reforço de confiança</li>
-</ul>
 </div>
 
 </section>
